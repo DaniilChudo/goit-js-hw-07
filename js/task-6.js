@@ -18,16 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     boxesContainer.innerHTML = '';
+    
+    const fragment = document.createDocumentFragment()
 
     let size = 30;
+
     for (let i = 0; i < amount; i++) {
       const div = document.createElement('div');
       div.style.width = `${size}px`;
       div.style.height = `${size}px`;
       div.style.backgroundColor = getRandomHexColor();
-      boxesContainer.appendChild(div);
+      fragment.appendChild(div);
       size += 10;
     }
+
+    boxesContainer.appendChild(fragment);
 
     input.value = '';
   });

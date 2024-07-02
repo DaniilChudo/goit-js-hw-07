@@ -28,3 +28,25 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+
+.item {
+  width:392px;
+    height:264px;
+    padding: 16px 0px 0px 0px;
+    gap: 16px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #F6F6FE;
+}
+
+.item-position {
+  width: 360px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #808080;
+    text-align: center;
+}
